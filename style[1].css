@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:lightblue;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 200px;
+    height: 100%;
+    background-color:yellow;
+    color: black;
+    position: fixed;
+    top: 10;
+    left: 10;
+    padding: 20px;
+    box-sizing: border-box; /* make sure padding is included in width */
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: block; /* make links fill the width of the sidebar */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* add smooth transition effect */
+  }
+  
+  .sidebar li a:hover {
+    background-color: #555; /* darken link on hover */
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 200px; /* align content with sidebar */
+    padding: 20px;
+    box-sizing: border-box; /* make sure padding is included in width */
+    background-color: greenyellow;
+    
+  }
+  .content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    height: 6vh;
+  }
+  .User{
+    height: 3vh;
+    justify-content: top;
+    
+    line-height: 2px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* align navbar to the right */
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* remove margin from last list item */
+  }
+  
+  nav li a {
+    display: block; /* make links fill the width of the list item */
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* add smooth transition effect */
+  }
+  
+  nav li a:hover {
+    background-color: #ddd; /* lighten link on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    display: none; /* hide dropdown menu by default */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* add box shadow effect */
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* show dropdown menu on hover */
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2; /* add background color on hover */
+  }
+  
+  /* Chat Component Styles */
+  .chat-component {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 89vh;
+    width: 30vw;
+  }
+  
+  .chat-component h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h3:after, h3:before {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: #f2f2f2;
+    margin: 0 10px;
+  }
+  .video-call{
+    height: 40vh;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .chat-messages {
+    height: 30vh;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .user {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .text {
+    display: inline-block;
+  }
+  
+  .chat-form {
+    display: flex;
+  }
+  
+  .chat-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .chat-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-form button:hover {
+    background-color: #555;
+  }
+  
+  
+  /* Team Members Component Styles */
+  .team-members-component {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 40vh;
+    width: 30vw;
+    
+  }
+  .team-members-component li a{
+    
+    display: flex; /* make links fill the width of the sidebar */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* add smooth transition effect */
+    justify-content: space-between;
+    
+
+  }
+  .team-members-component li a:hover {
+    background-color: #ddd; /* lighten link on hover */
+  }
+  
+  
+  .team-members-component ul {
+    list-style: none;
+ 
+  }
+  .add-new{
+    display:flex;
+    justify-content: center ;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .add-new button{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .meetings-component {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 40vh;
+  }
+  
+  .meetings-component h3 {
+    margin-top: 0;
+  }
+  
+  .meetings-component ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .meetings-component li {
+    margin-bottom: px;
+  }
+  
+  .meetings-component li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meetings-component li a:hover {
+    background-color: #f2f2f2; /* add background color on hover */
+  }
+  
+
+  
+  
+
+  
